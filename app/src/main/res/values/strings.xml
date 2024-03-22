@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">moblile 4</string>
+    <string name="button_series">Список сериалов</string>
+    <string name="films_button">Список фильмов</string>
+</resources>
