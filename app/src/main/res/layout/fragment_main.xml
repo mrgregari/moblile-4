@@ -5,19 +5,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Button
-        android:id="@+id/button_check_series"
+        android:id="@+id/buttonSeries"
         android:layout_width="280dp"
         android:layout_height="80dp"
         android:layout_marginTop="100dp"
         android:text="@string/button_series"
-        app:layout_constraintBottom_toTopOf="@id/button_check_series"
+        app:layout_constraintBottom_toTopOf="@id/buttonSeries"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_check_films"
+        android:id="@+id/buttonFilms"
         android:layout_width="280dp"
         android:layout_height="80dp"
         android:layout_marginBottom="100dp"
@@ -26,6 +26,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_check_films"
+        app:layout_constraintTop_toBottomOf="@id/buttonFilms"
         app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
