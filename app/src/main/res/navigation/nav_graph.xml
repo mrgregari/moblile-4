@@ -11,9 +11,16 @@
         <action
             android:id="@+id/action_mainFragment_to_recyclerFragment"
             app:destination="@id/recyclerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mediaFragment"
+            app:destination="@id/mediaFragment" />
     </fragment>
     <fragment
         android:id="@+id/recyclerFragment"
         android:name="com.example.moblile4.ui.fragments.RecyclerFragment"
         android:label="RecyclerFragment" />
+    <fragment
+        android:id="@+id/mediaFragment"
+        android:name="com.example.moblile4.ui.fragments.MediaFragment"
+        android:label="MediaFragment" />
 </navigation>

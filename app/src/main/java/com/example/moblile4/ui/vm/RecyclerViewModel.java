@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.moblile4.model.ItemModel;
-import com.example.moblile4.repository.AppRepository;
+import com.example.moblile4.data.model.ItemModel;
+import com.example.moblile4.data.repository.AppRepository;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class RecyclerViewModel extends AndroidViewModel {
     private LiveData<String> filmsTitle;
     public RecyclerViewModel(@NonNull Application application) {
         super(application);
-        AppRepository appRepository = new AppRepository();
+        AppRepository appRepository = new AppRepository(application);
         seriesData = appRepository.getSeriesData();
         filmsData = appRepository.getFilmsData();
         seriesTitle = appRepository.getSeriesTitle();

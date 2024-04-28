@@ -6,24 +6,29 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.moblile4.repository.AppRepository;
+import com.example.moblile4.data.model.MediaEntity;
+import com.example.moblile4.data.repository.AppRepository;
+
+import java.util.List;
 
 public class MainViewModel extends AndroidViewModel {
-    private LiveData<String> buttonNavigateToSeries;
-    private LiveData<String> buttonNavigateToFilms;
+    AppRepository appRepository;
 
+    public LiveData<List<MediaEntity>> getAllMedia() {
+        return appRepository.getAllMedia();
+    }
+    public void addPerfumery(String name) {
+        appRepository.addMedia(new MediaEntity(name));
+    }
     public MainViewModel(@NonNull Application application) {
         super(application);
-        AppRepository appRepository = new AppRepository();
-        buttonNavigateToSeries = appRepository.getNavigateButtonSeries();
-        buttonNavigateToFilms = appRepository.getNavigateButtonFilms();
+        appRepository = new AppRepository(application);
 
     }
-
     public LiveData<String> getButtonNavigateToSeries() {
-        return buttonNavigateToSeries;
+        return appRepository.getNavigateButtonSeries();
     }
     public LiveData<String> getButtonNavigateToFilms() {
-        return buttonNavigateToFilms;
+        return appRepository.getNavigateButtonFilms();
     }
 }

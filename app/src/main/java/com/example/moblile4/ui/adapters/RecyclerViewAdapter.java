@@ -1,6 +1,5 @@
 package com.example.moblile4.ui.adapters;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +9,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.moblile4.R;
-import com.example.moblile4.model.ItemModel;
+import com.example.moblile4.data.model.ItemModel;
 
 import java.util.ArrayList;
 import java.util.List;

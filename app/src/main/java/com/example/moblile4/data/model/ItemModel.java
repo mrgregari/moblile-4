@@ -1,4 +1,4 @@
-package com.example.moblile4.model;
+package com.example.moblile4.data.model;
 
 import android.graphics.drawable.Drawable;
 

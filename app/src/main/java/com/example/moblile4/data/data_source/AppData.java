@@ -1,10 +1,10 @@
-package com.example.moblile4.data_source;
+package com.example.moblile4.data.data_source;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.moblile4.R;
-import com.example.moblile4.model.ItemModel;
+import com.example.moblile4.data.model.ItemModel;
 
 import java.util.ArrayList;
 import java.util.List;
